@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-icon size="large" name="basketball-outline"></ion-icon>
+    </ion-buttons>
+    <ion-title>Score Apps</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-content>
+      <ion-text color="secondary">
+        <h1 class="ion-2x">{{no}}</h1>
+        <ion-button color="success" (click)="up()" expand="block"
+          >Up</ion-button
+        >
+        <ion-button color="warning" (click)="down()" expand="block"
+          >Down</ion-button
+        >
+        <ion-button color="primary" (click)="back()" expand="block"
+          >Kembali</ion-button
+        >
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
